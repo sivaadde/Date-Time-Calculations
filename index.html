@@ -1,0 +1,87 @@
+<html>
+<head>
+<title>Calculating specific day of the month</title>
+<script src="/js/script.js"></script>
+</head>
+<body>
+<div id="date" style="width: 600px; float:left; height:700px;margin:10px">
+<div id="input">
+  <h1>Calculate specific day of the month</h1>
+<a>Day of the month :</a>
+ <select name="Days" id='day' size="4">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+</select>
+<a>Day :</a>
+ <select name="Days" id='wday' size="7">
+  <option value="0">Sunday</option>
+  <option value="1">Monday</option>
+  <option value="2">Tuesday</option>
+  <option value="3">Wednesday</option>
+  <option value="4">Thursday</option>
+  <option value="5">Friday</option>
+  <option value="6">Saturday</option>
+</select> 
+<a>Month :</a>
+ <select name="Months" id='months' Size="7">
+  <option value="0">January</option>
+  <option value="1">Febuary</option>
+  <option value="2">March</option>
+  <option value="3">April</option>
+  <option value="4">May</option>
+  <option value="5">June</option>
+  <option value="6">July</option>
+  <option value="7">August</option>
+  <option value="8">September</option>
+  <option value="9">October</option>
+  <option value="10">November</option>
+  <option value="11">December</option>
+</select>
+<a>Year :</a>
+ <select name="Years" id='year' Size="7">
+  <option value="2019">2019</option>
+  <option value="2020">2020</option>
+  <option value="2021">2021</option>
+  <option value="2022">2022</option>
+  <option value="2023">2023</option>
+  <option value="2024">2024</option>
+  <option value="2025">2025</option>
+  <option value="2026">2026</option>
+  <option value="2027">2027</option>
+  <option value="2028">2028</option>
+  <option value="2029">2029</option>
+  <option value="2030">2030</option>
+</select> 
+</div>
+<br><br>
+<div id='submit'>
+<button onclick="a()">Calulate dates</button>
+<button onclick="reset()">Reset</button>
+</div>
+<div id='output'>
+    <ul id="myList">
+
+    </ul>
+</div>
+</div>
+<div id="datetime" style="width: 400px; float:left; height:400px;margin:10px;outline:1px;outline-color: crimson">
+<h1>Time difference</h1>
+<div id="input">
+  <a>Collection Date and Time</a>
+  <input type="datetime-local" id="coltym">
+  <br>
+  <a>Recipt Date and Time</a>
+  <input type="datetime-local" id="rcptym">
+  <br>
+  <br>
+  <button onclick="time()">Calclulate</button>
+  <button onclick="reset()">Reset</button>
+</div>
+<div id="output2">
+
+</div>
+</div>
+</body>
+</html>
